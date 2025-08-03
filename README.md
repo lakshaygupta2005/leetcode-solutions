@@ -90,9 +90,8 @@ This repository helps me:
 	•	Two Pointers
 	•	and more…
 
-## 👋 Contributions
+## 👨‍💻 Author
 
-This is primarily a personal learning project. However, suggestions, corrections, and constructive feedback are always welcome via issues or pull requests.
-
-Happy coding!
-— Lakshay Gupta 🚀
+**Lakshay Gupta**  
+🔗 [GitHub: lakshaygupta2005](https://github.com/lakshaygupta2005)  
+🔗 [LeetCode: guptalakshay2005](https://leetcode.com/guptalakshay2005)
