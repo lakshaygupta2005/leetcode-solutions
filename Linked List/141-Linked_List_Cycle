@@ -16,32 +16,35 @@ Space Complexity: O(1) — Only two pointers are used, regardless of list size.
 
 #include <bits/stdc++.h>
 using namespace std;
-
 /**
  * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
  */
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(NULL) {}
-};
-
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
-        ListNode* slow = head;  // moves 1 step at a time
-        ListNode* fast = head;  // moves 2 steps at a time
+				//fast and slow pointer
+        ListNode* slow = head;  //will move 1 steps at a time
+        ListNode* fast = head;   //will move 2 steps at a time
 
-        while (fast != nullptr && fast->next != nullptr) {
-            fast = fast->next->next;
-            slow = slow->next;
-            if (fast == slow) {
-                // pointers meet -> cycle exists
+        //if there is no cycle - fast will eventually end up at nullptr
+        //if there is a cycle -  both fast and slow will enter the cycle and eventually meet.
+        while(fast!= nullptr && fast->next != nullptr)
+        {
+            fast = fast->next->next;    //moves two steps at a time
+            slow = slow->next;          //moves one step at a time
+            if(fast == slow)
+            {
+                //fast and slow meets - cycle exists
                 return true;
             }
         }
 
-        // fast reached nullptr -> no cycle
+        //fast reached nullptr - no cycle exists
         return false;
     }
 };
