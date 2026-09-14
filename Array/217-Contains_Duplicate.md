@@ -12,6 +12,9 @@ We use a set data structure. set only stores unique elements(no duplicates)
 -if the entire loop completes, then that means no duplicates were present
 */
 
+##code (C++)
+
+```cpp
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
@@ -28,3 +31,4 @@ public:
         return false;
     }
 };
+```
