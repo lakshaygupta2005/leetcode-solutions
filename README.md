@@ -1,6 +1,6 @@
 # 🚀 LeetCode Solutions by Lakshay Gupta
 
-Welcome to my curated collection of LeetCode solutions. This repository is designed not just to showcase problem-solving skills, but also to maintain clean, readable, and well-documented code using modern C++.
+Welcome to my curated collection of LeetCode solutions. This repository is designed not just to showcase problem-solving skills, but also to maintain clean, readable, and well-documented code using modern C++ and for my personal DSA revision.
 
 ## 📁 Folder Structure
 
